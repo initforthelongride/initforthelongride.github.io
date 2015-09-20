@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mag | Magazine Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="themezinho">
+
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#"><img src="../images/logo-light.png" alt="Image" style="height:12px;"></a> <!-- TIP: Change this for the name of your file -->
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="#top" class="active">Top</a></li>
+          <li><a href="#markup">Markup</a></li>
+          <li><a href="#styles">Styles</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#psd">Photoshop</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="mailto:katmerayt@yahoo.com" >Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Navbar --> 
+
+<!-- Main Container Beginning -->
+
+<div class="container">
+  <div class="masthead">
+   
+    <h1>Mag Documentation</h1>
+    <p class="marketing-byline">We made another amazing html template documentation with &hearts; by <a href="http://themeforest.net/user/tema_ormanlari">themezinho</a></p>
+    <p>Mag has a lot of amazing and uniue posts type. It will fit perfectly to any kind of news and magazine blogs. Responsive and retina ready ionicons.</p>
+    <p><img src="../images/demo.jpg" alt="Image" style=" height:400px;"></p>
+  </div>
+  <!-- masthead -->
+  
+  <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/themezinho">here</a>. Thanks so much!</p>
+  </div>
+  <!-- intro -->
+  
+  <section id="markup">
+    <div class="page-header">
+      <h1>Markup <small>Markup customization and highlights</small></h1>
+    </div>
+    <ul>
+      <li>Slick Carousel Slider</li>
+      <li>Post hover css transitions</li>
+      <li>Social media counter</li>
+      <li>Gallery slider</li>
+      <li>Validated html-css</li>
+      <li>Well coded & commented</li>
+      <li>Bootstrap 3.3.4</li>
+      <li>Responsive design</li>
+      <li>Retina ready</li>
+      <li>Internal pages</li>
+      <li>Cross browsers support</li>
+      <li>Solid design & style</li>
+      <li>Perfect typography</li>
+      <li>Google maps api</li>
+      <li>Google fonts</li>
+      <li>ION font icon</li>
+      <li>Free quick life-time support</li>
+    </ul>
+    <p>This theme is a builted on bootstrap framework with three columns. All of the information within the main content area is nested within a 'section'. </p>
+    <hr />
+    <div class="row">
+      <div class="span3">
+        <h3>General Markup</h3>
+        <p> The general template structure is the same throughout the template. Here is the general structure.</p>
+      </div>
+      <div class="span9">
+        <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;title&gt;MAG | Online Magazine&lt;/title&gt;
+&lt;meta name="author" content="Themezinho"&gt;
+&lt;meta name="description" content="Online Magazine HTML Template"&gt;
+&lt;meta name="keywords" content="mag, magazine, article, html, template, carousel, gallery, post, html5"&gt;
+
+&lt;!-- SOCIAL MEDIA META --&gt;
+&lt;meta property="og:description" content="MAG | Online Magazine"&gt;
+&lt;meta property="og:image" content="http://www.acrocapoeira.com/mag/preview.png"&gt;
+&lt;meta property="og:site_name" content="MAG"&gt;
+&lt;meta property="og:title" content="MAG"&gt;
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:url" content="http://www.acrocapoeira.com/mag"&gt;
+
+&lt;!-- TWITTER META --&gt;
+&lt;meta name="twitter:card" content="summary"&gt;
+&lt;meta name="twitter:site" content="@MAG"&gt;
+&lt;meta name="twitter:creator" content="@MAG"&gt;
+&lt;meta name="twitter:title" content="MAG"&gt;
+&lt;meta name="twitter:description" content="MAG | Online Magazine"&gt;
+&lt;meta name="twitter:image" content="http://www.acrocapoeira.com/mag/preview.png"&gt;
+
+&lt;!-- FAVICON FILES --&gt;
+&lt;link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"&gt;
+&lt;link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"&gt;
+&lt;link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"&gt;
+&lt;link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed"&gt;
+&lt;link href="ico/favicon.png" rel="shortcut icon"&gt;
+
+&lt;!-- CSS FILES --&gt;
+&lt;link href="css/slick.css" rel="stylesheet"&gt;
+&lt;link href="css/ionicons.css" rel="stylesheet"&gt;
+&lt;link href="css/jquery.fancybox.css" rel="stylesheet"&gt;
+&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="css/base.css" rel="stylesheet"&gt;
+&lt;link href="css/style.css" rel="stylesheet"&gt;
+
+&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+&lt;!--[if lt IE 9]&gt;
+      &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
+      &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Content goes here.
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="span3">
+        <h3>How to edit Builder link color and buttons</h3>
+        <p>It is very easy to change main link color</p>
+      </div>
+      <div class="span9">
+        <pre class="prettyprint linenums">
+/* LINKS */
+a{ color:#232222;}
+a:hover{ text-decoration:underline; color:#232222;}
+a:focus{ text-decoration:none;}
+</pre>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="span3">
+        <h3>Change Search Box</h3>
+        <p>Here is the css style for site general title typography.</p>
+      </div>
+      <div class="span9">
+        <pre class="prettyprint linenums">
+/* SEARCH BOX */
+.search-box{ width:100%; height:100%; position:fixed; left:0; top:0; background:#fff; z-index:3; opacity:0; visibility:hidden;}
+.search-box{-webkit-transition: -webkit-transform 1.3s; -moz-transition: -moz-transform 0.3s;	transition: transform 0.3s;}
+.search-box.show-me{ opacity:1; visibility:visible;}
+.search-box .search-close{ width:100%; height:100%; position:absolute; left:0; top:0; cursor:url(../images/icon-close.svg), auto; z-index:2;}
+.search-box h4{ font-size:50px; font-family: 'Playfair Display', serif; letter-spacing:3px;}
+.search-box h6{margin-bottom:40px;}
+.search-box form{  display:inline-block; position:relative; z-index:7; background:#fff;}
+.search-box .form-group{ width:100%; float:left;}
+.search-box input[type="text"]{ width:600px; height:50px;}
+.search-box button[type="submit"]{ height:50px; padding:0 40px; font-weight:700;}
+</pre>
+      </div>
+    </div>
+    <hr />
+  </section>
+  <!-- Markup -->
+  
+  <section id="styles">
+    <div class="page-header">
+      <h1>Styles <small>Styles customization and highlights</small></h1>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <h3>Stylesheets</h3>
+        <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+      </div>
+      <div class="span9">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>File Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>base.css</code></td>
+              <td>Mobile side menu</td>
+            </tr>
+            <tr>
+              <td><code>bootstrap.css</code></td>
+              <td>Framework css file</td>
+            </tr>
+            <tr>
+              <td><code>bootstrap.min.css</code></td>
+              <td>Framework min css file </td>
+            </tr>
+            <tr>
+              <td><code>ionicons.css</code></td>
+              <td>ION font icons</td>
+            </tr>
+            <tr>
+              <td><code>jquery.fancybox.css</code></td>
+              <td>jQuery Litebox</td>
+            </tr>
+            <tr>
+              <td><code>slick.css</code></td>
+              <td>Slick carousel</td>
+            </tr>
+             <tr>
+              <td><code>style.css</code></td>
+              <td>Template style css</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="span3">
+        <h3>Table of contents </h3>
+        <p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+      </div>
+      <div class="span9">
+        <pre class="prettyprint linenums">
+	1. Body
+		1.1 Elements of body
+		1.2 Google Fonts
+		1.3 Fonts
+		1.4 Links
+		1.5 Customized elements
+		1.6 Form elements
+		1.7 Table valign
+		1.8 Loading
+		
+		
+	2. Main Content
+		2.1 Elements of main content
+		2.2 Left side
+		2.3 Right side
+		2.4 Section title
+		
+		
+	3. Search Box
+		3.1 Elements of search box
+		3.2 Headlines
+		3.3 Form
+		3.4 Inputs
+		
+		
+	4. Header
+		4.1 Elements of header
+		4.2 Navbar header
+		4.3 Navbar menu
+		4.4 Search
+		4.5 Aligned center
+		4.6 Aligned left
+		
+		
+	5. Dropdown Menu
+		5.1 Elements of dropdown menu
+		5.2 Customized dropdown
+		5.3 Links
+	
+		
+	6. Fixed Nav
+		6.1 Elements of fixed nav
+		6.2 Hide element
+		6.3 Body spacing
+		
+		
+	7. Int Header
+		7.1 Elements of int header
+		7.2 Headlines
+		7.3 Breadcrumb
+		
+		
+	8. Article Header
+		8.1 Elements of article header
+		8.2 Article Image Background
+		
+		
+	9. Article Detail
+		9.1 Elements of article detail
+		9.2 Headlines
+		9.3 Author - Date
+		9.4 Lead
+		9.5 Social share
+		9.6 Article image
+		9.7 Blockquote
+		
+		
+	10. Search Results
+		10.1 Elements of search results
+		10.2 Headlines
+		10.3 Form
+		10.4 Inputs
+		
+		
+	11. Highlist Posts
+		11.1 Elements of highlight posts
+		11.2 Post Image
+		11.3 Caption
+		11.4 Headlines
+		11.5 Parahraphs
+		11.6 Post navigation
+		11.7 Highlight Slider
+		
+		
+	12. Recent News
+		11.1 Elements of recent news
+		11.2 Post Image
+		11.3 Headlines
+		11.4 Post button
+		
+		
+	13. Side Image Posts
+		13.1 Elements of side image posts
+		13.2 Post
+		13.3 Image
+		13.4 Caption
+		13.5 Headlines
+		13.6 Paragraph
+		13.7 Post button
+		
+		
+	14. Top Categories
+		14.1 Elements of top categories
+		14.2 Images
+		14.3 Headlines
+		14.4 Link
+ 		
+		
+	15. Social Buttons
+		15.1 Elements of social buttons
+		15.2 Icons
+		15.3 Facts
+		
+		
+	16. Home Gallery
+		16.1 Elements of home gallery 
+		16.2 Images
+		16.3 Carousel dots
+		
+		
+	17. Top Image Posts
+		17.1 Elements of top image posts
+		17.2 Post 
+		17.3 Images
+		17.4 Headlines
+		17.5 Paragraph
+		17.6 Post button
+		
+	
+	18. Videos
+		18.1 Elements of Videos
+		18.2 Video thumb
+		18.3 Image
+		18.4 Headlines
+		
+		
+	19. Career 
+		19.1 Elements of career
+		19.2 Headlines
+		19.3 Paragraph
+		19.4 Resume form
+		19.5 Form inputs
+		
+		
+	20. Must Read Posts
+		20.1 Elements of must read
+		20.2 Post
+		20.3 Images
+		20.4 Caption
+		20.5 Headlines
+		20.6 Date - author
+		
+		
+	21. Side Categories
+		21.1 Elements of side categories
+		21.2 Headlines
+		21.3 Images
+		21.4 Links
+		
+		
+	22. Popular Tags
+		22.1 Elements of popular tags 
+		22.2 Tag lists
+		22.3 Links
+		
+		
+	23. Top Celebrities
+		23.1 Elements of top celebrities
+		23.2 Images
+		23.3 Captions
+		23.4 Headlines
+		
+		
+	24. Side Banner
+		24.1 Elements of side banner
+		24.2 Link
+		24.3 Image
+		
+		
+	25. Text Page
+		25.1 Elements of text page
+		25.2 Headlines
+		25.3 Team section
+		25.4 Parahraph
+		
+		
+	26. Contact Page
+		26.1 Elements of contact page
+		26.2 Headlines
+		26.3 Address
+		26.4 Map
+		26.5 Form
+		26.6 Inputs
+		
+		
+	27. Pagination
+		27.1 Elements of pagination
+		27.2 List
+		27.3 Links
+		
+		
+	28. Newsletter
+		28.1 Elements of newsletter
+		28.2 Box
+		28.3 Headlines
+		28.4 Form
+		28.5 Inputs
+		
+	
+	29. Footer
+		29.1 Elements of footer
+		29.2 Headlines
+		29.3 About
+		29.4 Hot news 
+		29.5 Demo video
+		29.6 Sub footer
+        29.7 Dark
+        29.8 Light
+		
+        
+	30. Responsive Fixes
+		30.1 Resolutions
+		30.2 Tablet Fixes
+		20.3 Mobile Fixes
+		</pre>
+      </div>
+    </div>
+  </section>
+  <!-- Styles -->
+  
+  <section id="javascript">
+    <div class="page-header">
+      <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <h3>JavaScript Files</h3>
+        <p>This is the list of all the jquery files are we used for our theme. </p>
+      </div>
+      <div class="span9">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>bootstrap.js</code></td>
+              <td>Bootstrap jquery framework</td>
+            </tr>
+            <tr>
+              <td><code>bootstrap.min.js</code></td>
+              <td>Bootstrap MIN jquery framework</td>
+            </tr>
+            <tr>
+              <td><code>jPushMenu.js</code></td>
+              <td>Side menu js</td>
+            </tr>
+            <tr>
+              <td><code>jquery.fancybox.js</code></td>
+              <td>Jquery litebox js</td>
+            </tr>
+            <tr>
+              <td><code>jquery.min.js</code></td>
+              <td>Main jQuery library</td>
+            </tr>
+            <tr>
+              <td><code>npm.js</code></td>
+              <td>Bootstrap other features js</td>
+            </tr>
+            <tr>
+              <td><code>scripts.js</code></td>
+              <td>All js parameters</td>
+            </tr>
+            <tr>
+              <td><code>slick.min.js</code></td>
+              <td>Carousel jquery</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="span3">
+        <h3>Highlight slider and carousel script parameters</h3>
+        <p>It's so easy to edit transition paramaters, open up the file <code> scripts.js </code> and change the following code: </p>
+      </div>
+      <div class="span9">
+        <pre class="prettyprint js linenums:1">	
+// Highlight slider
+		$('.highlight-slider .slider-inner').slick({
+		  infinite: true,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear'
+		});
+						
+		
+		
+		// Posts Carousel
+		$('.hightlight-posts').slick({
+		infinite: true,
+	  	speed: 300,
+	  	slidesToShow: 3,
+	  	slidesToScroll: 1,
+	  	responsive: [
+		{
+		  breakpoint: 1179,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: true,
+			dots: true
+		  }
+		},
+		{
+		  breakpoint: 989,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		  }
+		}
+		]
+	});	  
+</pre>
+      </div>
+    </div>
+  </section>
+  <!-- JavaScript -->
+  
+  <section id="psd">
+    <div class="page-header">
+      <h1>Photoshop Files <small>Photoshop customization and highlights</small></h1>
+    </div>
+    <p>There is no PSD file in this theme</p>
+  </section>
+  <!-- Photoshop -->
+  
+  <section id="credits">
+    <div class="page-header">
+      <h1>Credits Files <small>Some of your credits and sources</small></h1>
+    </div>
+    <p>I've used the following images, jquery or other files as listed.</p>
+    <h3>JavaScript</h3>
+    <ol>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Revolation Slider</a> </li>
+      <li><a href="#">Slick Carousel</a></li>
+      <li><a href="#">Fancybox Litebox</a></li>
+      <li><a href="#">Google Maps</a> </li>
+    </ol>
+    <h3>Images</h3>
+    <ol>
+      <li><a href="http://thestocks.im/">http://thestocks.im/</a> <small>&mdash; Some of images we used from here </small></li>
+      <li><a href="http://www.shutterstock.com/">http://www.shutterstock.com/</a> <small>&mdash; Some of images we used from here </small></li>
+    </ol>
+  </section>
+  <!-- Credits -->
+  
+  <hr />
+  <div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. I'll do my best to assist you. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+  </div>
+  <hr />
+  <footer>
+    <p>&copy; Company 2015 - Themezinho</p>
+  </footer>
+</div>
+<!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
